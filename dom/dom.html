@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="object.js"></script>
+    <style>
+        .card1 .card-child{
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Dom stands for document object model html is present inside the dom</h3>
+    <ul>
+        <li>representation of website</li>
+        <li>dom contains lots of methods to interact with websites</li>
+    </ul>
+    <p>methods in dom</p>
+    <ul>
+        <!-- data fetching method -->
+        <li>getElementsByTagName</li>
+        <ul>
+            <li>document.getElementByTagName('TagName')</li>
+            <li>Output will be in html collections- array</li>
+            <li>we can use indexing using to fetch the specific data</li>
+            <li>we cannot use parent child relation</li>
+        </ul>
+        <li>getElementByClassName</li>
+        <ul>
+            <li>document.getElementByClassName('ClassName')</li>
+            <li>Output will be in html collections- array</li>
+            <li>we can use indexing using to fetch the specific data</li>
+            <li>we cannot use parent child relation</li>
+        </ul>
+        <li>getElementById</li>
+        <ul>
+            <li>document.getElementById('IdName')</li>
+            <li>Output will be in first occurd unique element</li>
+            <li>the output is exact element what we fetch</li>
+            <li>we cannot use parent child relation</li>
+        </ul>
+        <li>querySelector</li>
+        <ul>
+            <li>document.querySelector("parent child")</li>
+            <li>we can perform parent child relation </li>
+            <li>Output will be in first occurd unique element</li>
+        <li>it is similar to css styling</li>
+        <li>we have to accurate detail in taking the element</li> 
+    </ul>
+<div class="card"></div>
+<div class="card1">
+    <span class="card-child">hello</span>
+</div>
+<div></div>
+        <li>querySelectorAll</li>
+        <ul>
+            <li>document.querySelector("parent child")</li>
+            <li>we can perform parent child relation </li>
+            <li>Output will be display all the elemment </li>
+        <li>it is similar to css styling</li>
+        <li>we have to accurate detail in taking the element</li> 
+        
+    </ul>
+    </ul>
+
+</body>
+</html>

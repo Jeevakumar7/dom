@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       [for="mistake"] {
+        border: 1px solid red;
+        color: red;
+        }
+        #validate{
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- data reading & data writing -->
+    <h3>user mistake</h3>
+    <p class="new-class"> hi</p>
+    <ul>
+        <li>innnerText</li>
+        <ul><li>the text data b/w open tag & close tag will be comming as output</li>
+            <li>we can write whatever the data is user give it is going to be considered</li>
+            <p>example document.querySelector(".card-body h2").innerText="jeeva"</p>
+        </ul>
+        <li>textContent</li>
+        <ul>
+            <li>the text data b/w open tag & close tag will be comming as output</li>
+            <li>it can be read even if the element is hidden</li>
+            <li>it give line specification as well</li>
+            <li> we can write whatever the data is user give it is going to be considered</li>
+        </ul>
+        <li>innerHTML</li>
+        <ul>
+            <ul>
+                <li>all the data b/w open tag & close tag will be comming as output</li>
+                <li>we can write tags in the elements</li>
+                <p>
+                 var a="GUVI.in@gmail.com"   document.querySelector(".page-header .row ").innerHTML=`<img class="mr-2" src="images/webkata/webkata.svg" alt="WebKata by Guvi Logo"> ${a.split('@')[0]}`</p>
+                 <p>example-2 document.querySelector(".card-body").innerHTML=`<img src="/build/images/offers-live.88e0599475427e7e7da90a11b223efe1.webp" alt="LIVE-Classes" width="40px" height="40px"> jeeva`</p>
+            </ul>
+        </ul>
+    </ul>
+    <!-- attributes -->
+    <!-- to add attribute  -->
+    <li>setAttribute</li>
+    <li>it will create a new attribute if it is not present else it will replace it</li>
+    <li>element = for which we need to add setAttribute </li>
+    <li> element.setAttribute(attribute name,attribute value)</li>
+     <li>it should be as an enitire tag</li>
+     <li>dont use this for class because we have advance level method to do</li>
+     <p>
+        var a=document.querySelector('h3')
+undefined
+a.setAttribute('for','mistake')
+undefined
+a.setAttribute('id','validate')
+undefined 
+     </p>
+     <!-- get attribute -->
+     <li>to get the attribute values</li>
+     <li>if no attribute output will be null</li>
+     <li>element.getAttribute(attribute name)</li>
+     <p>example 
+        a.getAttribute('for')
+"mistake"
+a.getAttribute('id')
+"validate"  
+     </p>
+     <!-- to add class attribute -->
+     <li>classList</li>
+     <ul><li>add</li>
+     <li>remove</li>
+     <li>contains</li>
+     <li>toggle</li>
+     <ul><li>if class is present it will remove and its not present vice versa</li></ul>
+    </ul>
+    <p>example
+        
+var b=document.querySelector('.new-class')
+undefined
+b.classList.add("jeeva")
+undefined
+b
+<p class="new-class jeeva">
+
+b.classList.contains("jeeva")
+true
+b.classList.remove("jeeva")
+undefined
+b
+<p class="new-class">
+
+b.classList.toggle("best")
+true
+b.classList.toggle("best")
+false 
+    </p>
+<!-- creation and to add element with parent and deletion -->
+<li>create element</li>
+<ul><li>document.createElement('tag name')</li>
+<li>to add source</li></ul>
+<p>example 
+    child=document.createElement("img")
+<img>
+
+child.setAttribute('src','https://www.shutterstock.com/image-photo/selective-focus-red-blue-macow-260nw-2152492411.jpg')
+undefined
+child
+<img src="https://www.shutterstock…cow-260nw-2152492411.jpg">
+</p>
+<li>append</li>
+<ul>
+    <li>to add the created data to the parent</li>
+    <li>to get the parrent</li>
+    <li>variable.appended (element) will be the last element in the parent</li>
+</ul>
+    <p>example 
+        child=document.createElement("img")
+        <img>
+        
+        child.setAttribute('src','https://www.shutterstock.com/image-photo/selective-focus-red-blue-macow-260nw-2152492411.jpg') 
+        
+        child
+<img src="https://www.shutterstock…cow-260nw-2152492411.jpg">
+
+parent =document.querySelector
+function querySelector()
+
+parent =document.querySelector('.new-class')
+<p class="new-class">
+
+parent.append(child)
+undefined
+
+    </p>
+    <li>remove</li>
+    <p>example 
+        child=document.createElement("img")
+<img>
+
+child.setAttribute('src','https://www.shutterstock.com/image-photo/selective-focus-red-blue-macow-260nw-2152492411.jpg')
+undefined
+c.append(child)
+undefined
+var parent=document.querySelector('h3')
+undefined
+parent
+<h3>
+
+parent.append(child)
+undefined
+child.remove() 
+    </p>
+    <li>variable.remove</li>
+  
+</body>
+
+</html>

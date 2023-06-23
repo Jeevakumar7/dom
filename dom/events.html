@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    tr,td{
+        border: 2px solid black;
+        margin: 15px;
+        padding: 10px;
+    }
+    th{
+        border: 2px solid rgb(20, 147, 205);
+        margin: 15px;
+        padding: 10px;
+    }
+</style>
+<body>
+
+    <h1 class="name"></h1>
+    <h1>Mouse event</h1>   
+    <button type="submit">message</button><br><br>
+    <p class="screen"></p>
+    <div class="clac">
+    <button onclick="clicking(this)" class="1">1</button>
+    <button onclick="clicking(this)" class="2">2</button>
+    <button onclick="clicking(this)" class="3">3</button><br><br>
+    <button onclick="clicking(this)" class="4">4</button>
+    <button onclick="clicking(this)" class="5">5</button>
+    <button onclick="clicking(this)" class="6">6</button><br><br>
+    <button onclick="clicking(this)" class="7">7</button>
+    <button onclick="clicking(this)" class="8">8</button>
+    <button onclick="clicking(this)" class="9">9</button><br><br>
+    <button onclick="clicking(this)" class="+">+</button>
+    <button onclick="clicking(this)" class="-">-</button>
+    <button onclick="clicking(this)" class="*">*</button>
+    <button onclick="clicking(this)" class="%">%</button><br><br>
+    <button onclick="evaluate1(this)"class="=">=</button>
+</div>
+
+
+
+<h1 class="">keybord event</h1>
+<ul><li>keypress</li>
+<li>keyup</li>
+<li>keydown</li></ul>
+
+
+<br><br>
+<hr>
+<!-- nature of the form is redirect -->
+<div class="errorMsg"></div>
+<form id="form">
+    <label for="">first name</label><br>
+    <input type="text"><br>
+    <label for="">email</label><br>
+    <input type="email"><br>
+    <label for="">password</label><br>
+    <input type="password"><br>
+    <label for="">Number</label><br>
+    <input type="number"><br>
+    <button type="submit">submit</button>
+</form> 
+<div class="user-data"></div>
+
+<div class="user-tabel">
+    <table>
+        <tr>
+            <th>first name</th>
+            <th>email</th>
+            <th>password</th>
+            <th>Number</th>
+            
+        </tr>
+    </table>
+</div>
+</body>
+<script src="event.js"></script>
+</html>

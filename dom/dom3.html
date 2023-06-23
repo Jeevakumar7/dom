@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="dom3.js"></script>
+</head>
+<body>
+    <h1 class="username"></h1>
+    <h3>window is a global parent function of dom</h3>
+    <ul>few important methods 
+        <li>windo.open</li>
+        <li>window.close its used to close the current tab</li>
+        <li>window.screen it gives the screen details </li>
+        <li>window.screen.height</li>
+        <li>window.screen.width</li>
+        <li>scrollY its give the screen position  Y axis scrolled pixel vertical</li>
+        <li>scrollX its give the screen position X axis scrolled pixel horizontal</li>
+        <li>widow.screen.innerWidth - width are we using currently</li>
+        <li>widow.screen.innerHeight  - width are we using currently</li>
+        
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+        <!-- to add tags in any postion -->
+    <li>insertAdjacentElement</li>
+    <li>beforebegin</li>
+    <ul><li>top </li></ul>
+    <li>afterbegin</li>
+    <li>beforeend</li>
+    <li>afterend</li>
+    <div class="Title">
+    <h1 class="str">insertAdjacentElement</h1>
+    <h1>start</h1>
+    <h1>end</h1>
+<!-- changing style with dom -->
+<ul>.style
+    <li>to pick the exact element</li>
+    <li>apply the style we want</li>
+    <!-- traversing in dom -->
+    <li>element.parentElement -to get the output as parent </li>
+    <li>childNodes given the node data in this html rather than tags are node data[] it give all the data</li>
+    <li>children given the collection of data its exact element</li>
+    <li>previousElementSibling it give the previous element tag</li>
+    <li>previousSibling it gives previous data whaever may be(element, text)</li>
+    <p>note there is major difference is html is a markup language it wont consider the blank 
+        space but javascript consider the space thats why each and every time use a previousElementSibling 
+        thats the reason if we want specific data then go through it is give the expected output we 
+        mostly used the previousElementSibling</p>
+        <li>nextElementSibling get the exact previous element </li>
+        <li>nextSibling is get the exact  previous daata present</li>
+    <p>document.querySelector('.d-flex').children
+        HTMLCollection { 0: div.col-md-3.ml-2, 1: div#mainNavDefault.d-flex.flex-row, 2: div.col-md-9.pl-2.usr_name
+        , length: 3, … }
+        ​
+        0: <div class="col-md-3 ml-2">
+        ​
+        1: <div id="mainNavDefault" class="d-flex flex-row" style="line-height: 1em; border-bottom:none; ">
+        ​
+        2: <div class="col-md-9 pl-2 usr_name">
+        ​
+        length: 3
+        ​
+        mainNavDefault: <div id="mainNavDefault" class="d-flex flex-row" style="line-height: 1em; border-bottom:none; ">
+        ​
+        <prototype>: HTMLCollectionPrototype { item: item(), namedItem: namedItem(), length: Getter, … }
+        
+        document.querySelector('.d-flex').childNodes
+        NodeList(3) [ div.col-md-3.ml-2, div#mainNavDefault.d-flex.flex-row, div.col-md-9.pl-2.usr_name
+         ]
+        ​
+        0: <div class="col-md-3 ml-2">
+        ​
+        1: <div id="mainNavDefault" class="d-flex flex-row" style="line-height: 1em; border-bottom:none; ">
+        ​
+        2: <div class="col-md-9 pl-2 usr_name">
+        ​
+        length: 3
+        ​
+        <prototype>: NodeListPrototype { item: item(), keys: keys(), values: values(), … }</p>
+
+            <p> wiki site
+                document.querySelector('[title="Arabian Sea"]')
+                <a href="/wiki/Arabian_Sea" title="Arabian Sea">
+                
+                var a=document.querySelector('[title="Arabian Sea"]')
+                undefined
+                a.previousElementSibling
+                <a href="/wiki/Indian_Ocean" title="Indian Ocean">
+                
+                a.previousibling
+                undefined
+                a.previousSibling
+                #text " on the south, the "
+                
+                a.nextElementSibling
+                <a href="/wiki/Bay_of_Bengal" title="Bay of Bengal">
+                
+                a.nextSibling
+                #text " on the southwest, and the "</p>
+</ul>
+</div>
+</body>
+</html>
